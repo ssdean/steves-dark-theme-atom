@@ -1,0 +1,15 @@
+{
+  "name": "steves-dark-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "Syntax theme for steves-dark-ui",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/atom/steves-dark-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

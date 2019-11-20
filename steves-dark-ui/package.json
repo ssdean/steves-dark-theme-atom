@@ -1,0 +1,15 @@
+{
+  "name": "steves-dark-ui",
+  "theme": "ui",
+  "version": "0.0.0",
+  "description": "Dark UI theme by Steve",
+  "keywords": [
+    "ui",
+    "theme"
+  ],
+  "repository": "https://github.com/atom/steves-dark-ui",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
