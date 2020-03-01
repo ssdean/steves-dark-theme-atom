@@ -10,17 +10,18 @@
 // Try to edit some of the values below to see your theme change.
 // A good start is to change the color of the `@base-background-color` variable.
 
+@import "color";
 
 // Text Colors
-@text-color:           hsl(200,10%,70%);
-@text-color-subtle:    hsl(165,70%,40%);
-@text-color-highlight: hsl(200,50%,70%);
-@text-color-selected:  hsl(200,10%,100%);
+@text-color:           lighten(@base-background-color, 50%);
+@text-color-subtle:    lighten(@base-background-color, 25%);
+@text-color-highlight: lighten(@blue, 15%);
+@text-color-selected:  lighten(@base-background-color, 85%);
 
-@text-color-info:    hsl(200,  10%, 70%);
-@text-color-success: hsl(140,  44%, 62%);
-@text-color-warning: hsl( 36,  60%, 72%);
-@text-color-error:   hsl(  9, 100%, 64%);
+@text-color-info:    white;
+@text-color-success: @green;
+@text-color-warning: @orange;
+@text-color-error:   @red;
 
 // Background colors
 @background-color-info:    hsl(200, 50%, 10%);
@@ -33,15 +34,15 @@
 @app-background-color:       darken(@base-background-color, 2%);
 
 // Base colors
-@base-background-color: hsl(200,50%,10%);
+@base-background-color: @base;
 @base-border-color:     darken(@base-background-color, 0%);
 
 // Component colors
 @pane-item-background-color: @base-background-color;
 @pane-item-border-color:     @base-border-color;
 
-@input-background-color: @app-background-color;
-@input-border-color:     @base-border-color;
+@input-background-color: lighten(@base-background-color, 2%);
+@input-border-color:     @blue; // Text input box border
 
 @tool-panel-background-color: @base-background-color;
 @tool-panel-border-color:     @base-border-color;
@@ -52,13 +53,13 @@
 @panel-heading-background-color: lighten(@base-background-color, 4%);
 @panel-heading-border-color:     @base-border-color;
 
-@overlay-background-color: lighten(@base-background-color, 4%);
+@overlay-background-color: @magenta;
 @overlay-border-color:     @base-border-color;
 
 @button-background-color:          lighten(@base-background-color, 10%);
 @button-background-color-hover:    lighten(@button-background-color, 12%);
-@button-background-color-selected: @button-background-color-hover;
-@button-border-color:              @base-border-color;
+@button-background-color-selected: @blue;
+@button-border-color:              lighten(@base-background-color, 10%); // Drop down box borders
 
 @tab-bar-background-color:    @base-background-color;
 @tab-bar-border-color:        @base-border-color;
@@ -67,7 +68,7 @@
 @tab-border-color:            @base-border-color;
 
 @tree-view-background-color: @base-background-color;
-@tree-view-border-color:     @base-border-color;
+@tree-view-border-color:     @magenta;
 
 // Site colors
 @ui-site-color-1: hsl(208, 100%, 50%); // blue
@@ -77,15 +78,15 @@
 @ui-site-color-5: #EBDD5B;             // yellow
 
 // Sizes
-@font-size: 14px;
+@font-size: 12px;
 @input-font-size: 14px;
 
 @disclosure-arrow-size: 12px;
 
 @component-padding: 10px;
-@component-icon-padding: 5px;
+@component-icon-padding: 10px;
 @component-icon-size: 16px;
-@component-line-height: 25px;
+@component-line-height: 20px;
 
 @tab-height: 30px;
 
