@@ -62,11 +62,11 @@ atom-text-editor {
   color: @purple;
 
   &.syntax--control {
-    color: @purple;
+    color: @light-purple;
   }
 
   &.syntax--operator {
-    color: @green;
+    color: @red;
   }
 
   &.syntax--other.syntax--special-method {
@@ -83,18 +83,18 @@ atom-text-editor {
 }
 
 .syntax--constant {
-  color: @yellow;
+  color: @light-orange;
 
   &.syntax--character.syntax--escape {
-    color: @cyan;
+    color: @light-blue;
   }
 
   &.syntax--numeric {
-    color: @orange;
+    color: @purple;
   }
 
   &.syntax--other.syntax--color {
-    color: @cyan;
+    color: @light-blue;
   }
 
   &.syntax--other.syntax--symbol {
@@ -103,7 +103,7 @@ atom-text-editor {
 }
 
 .syntax--variable {
-  color: @red;
+  color: @light-red;
 
   &.syntax--interpolation {
     color: darken(@red, 10%);
@@ -124,7 +124,7 @@ atom-text-editor {
 
 
   &.syntax--regexp {
-    color: @cyan;
+    color: @light-blue;
 
     .syntax--source.syntax--ruby.syntax--embedded {
       color: @orange;
@@ -177,7 +177,7 @@ atom-text-editor {
   }
 
   &.syntax--function  {
-    color: @cyan;
+    color: @light-blue;
 
     &.syntax--any-method {
       color: @blue;
@@ -187,7 +187,7 @@ atom-text-editor {
 
 .syntax--entity {
   &.syntax--name.syntax--function {
-    color: @cyan;
+    color: @light-blue;
   }
   &.syntax--name.syntax--type {
     color: @orange;
