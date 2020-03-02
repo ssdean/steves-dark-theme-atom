@@ -1,36 +1,7 @@
 
-// This defines all syntax variables that syntax themes must implement when they
-// include a syntax-variables.less file.
-
-// General colors
-@syntax-text-color: lighten(@base, 75%);
-@syntax-cursor-color: @cyan;
-@syntax-selection-color: lighten(@dark-gray, 10%);
-@syntax-background-color: @base;
-
-// Guide colors
-@syntax-wrap-guide-color: @dark-gray;
-@syntax-indent-guide-color: @dark-blue;
-@syntax-invisible-character-color: lighten(@base, 25%);
-
-// For find and replace markers
-@syntax-result-marker-color: lighten(@dark-gray, 75%);
-@syntax-result-marker-color-selected: white;
-
-// Gutter colors
-@syntax-gutter-text-color: lighten(@base, 25%);
-@syntax-gutter-text-color-selected: lighten(@base, 75%);
-@syntax-gutter-background-color: lighten(@base, 2%);
-@syntax-gutter-background-color-selected: lighten(@base, 2%);
-
-// For git diff info. i.e. in the gutter
-@syntax-color-renamed: @blue;
-@syntax-color-added: @green;
-@syntax-color-modified: @orange;
-@syntax-color-removed: @red;
 
 // Colors
-@base: hsl(220,10%,15%); // Syntax background colour
+@base: hsl(220,10%,15%); // Background colour
 
 @blue: hsl(230,90%,70%);
 @cyan: hsl(170,90%,70%);
@@ -39,15 +10,3 @@
 @purple: hsl(270,90%,70%);
 @orange: hsl(20,90%,70%);
 @red: hsl(0,90%,70%);
-
-// Other colours
-@very-light-gray: #f3f4f5;
-@light-gray: #969896;
-@gray: #373b41;
-@dark-gray: #282a2e;
-@very-dark-gray: #1d1f21;
-@dark-blue: hsl(250,60%,40%);
-@navy-blue: hsl(200,50%,10%);
-@light-orange: #dbc970;
-@yellow: #f6f655;
-@brown: #9b794b;

@@ -25,9 +25,9 @@
 
 // Background colors
 @background-color-info:    hsl(200, 50%, 10%);
-@background-color-success: hsl(160,  70%, 36%);
-@background-color-warning: hsl(32,   60%, 50%);
-@background-color-error:   hsl(0,    70%, 50%);
+@background-color-success: @green;
+@background-color-warning: @orange;
+@background-color-error:   @red;
 
 @background-color-highlight: lighten(@base-background-color, 2%);
 @background-color-selected:  lighten(@base-background-color, 2%);
@@ -53,8 +53,8 @@
 @panel-heading-background-color: lighten(@base-background-color, 4%);
 @panel-heading-border-color:     @base-border-color;
 
-@overlay-background-color: @magenta;
-@overlay-border-color:     @base-border-color;
+@overlay-background-color: @base; // Pop-up for new file path
+@overlay-border-color:     @base;
 
 @button-background-color:          lighten(@base-background-color, 10%);
 @button-background-color-hover:    lighten(@button-background-color, 12%);

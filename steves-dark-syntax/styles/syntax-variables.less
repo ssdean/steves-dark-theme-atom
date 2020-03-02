@@ -3,18 +3,18 @@
 // include a syntax-variables.less file.
 
 // General colors
-@syntax-text-color: lighten(@base, 75%);
+@syntax-text-color: lighten(@blue, 20%);
 @syntax-cursor-color: @cyan;
-@syntax-selection-color: lighten(@dark-gray, 10%);
+@syntax-selection-color: lighten(@base, 15%);
 @syntax-background-color: @base;
 
 // Guide colors
-@syntax-wrap-guide-color: @dark-gray;
-@syntax-indent-guide-color: @dark-blue;
+@syntax-wrap-guide-color: darken(@base, 10%);
+@syntax-indent-guide-color: darken(@base, 10%);
 @syntax-invisible-character-color: lighten(@base, 25%);
 
 // For find and replace markers
-@syntax-result-marker-color: lighten(@dark-gray, 75%);
+@syntax-result-marker-color: @magenta;
 @syntax-result-marker-color-selected: white;
 
 // Gutter colors
@@ -29,25 +29,24 @@
 @syntax-color-modified: @orange;
 @syntax-color-removed: @red;
 
+// Code syntax colors
+@string-color: @lime;
+
+
+
 // Colors
 @base: hsl(220,10%,15%); // Syntax background colour
 
-@blue: hsl(230,90%,70%);
-@cyan: hsl(170,90%,70%);
-@green: hsl(130,90%,70%);
-@magenta: hsl(310,90%,70%);
-@purple: hsl(270,90%,70%);
-@orange: hsl(20,90%,70%);
-@red: hsl(0,90%,70%);
+@blue: hsl(240,100%,80%);
+@cyan: hsl(180,100%,80%);
+@green: hsl(140,100%,70%);
+@lime: hsl(90, 100%, 70%);
+@magenta: hsl(310,100%,80%);
+@purple: hsl(280,100%,80%);
+@orange: hsl(20,100%,80%);
+@red: hsl(0,100%,80%);
+@yellow: hsl(60,100%,80%);
 
 // Other colours
-@very-light-gray: #f3f4f5;
-@light-gray: #969896;
-@gray: #373b41;
-@dark-gray: #282a2e;
-@very-dark-gray: #1d1f21;
-@dark-blue: hsl(250,60%,40%);
-@navy-blue: hsl(200,50%,10%);
-@light-orange: #dbc970;
-@yellow: #f6f655;
-@brown: #9b794b;
+
+

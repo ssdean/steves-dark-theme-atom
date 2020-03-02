@@ -35,11 +35,11 @@ atom-text-editor {
   .gutter .line-number.folded,
   .gutter .line-number:after,
   .fold-marker:after {
-    color: @light-gray;
+    color: @magenta;
   }
 
   .invisible {
-    color: @syntax-text-color;
+    color: @syntax-invisible-character-color;
   }
 
   .cursor {
@@ -55,7 +55,7 @@ atom-text-editor {
 // Syntax styles
 
 .syntax--comment {
-  color: @light-gray;
+  color: lighten(@base, 20%);
 }
 
 .syntax--keyword {
@@ -66,7 +66,7 @@ atom-text-editor {
   }
 
   &.syntax--operator {
-    color: @magenta;
+    color: @green;
   }
 
   &.syntax--other.syntax--special-method {
@@ -74,23 +74,23 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--unit {
-    color: @orange;
+    color: @magenta;
   }
 }
 
 .syntax--storage {
-  color: @cyan;
+  color: @blue;
 }
 
 .syntax--constant {
-  color: @orange;
+  color: @yellow;
 
   &.syntax--character.syntax--escape {
     color: @cyan;
   }
 
   &.syntax--numeric {
-    color: @red;
+    color: @orange;
   }
 
   &.syntax--other.syntax--color {
@@ -120,7 +120,7 @@ atom-text-editor {
 }
 
 .syntax--string {
-  color: @green;
+  color: @string-color;
 
 
   &.syntax--regexp {
@@ -139,7 +139,7 @@ atom-text-editor {
 .syntax--punctuation {
   &.syntax--definition {
     &.syntax--comment {
-      color: @light-gray;
+      color: lighten(@base, 20%);
     }
 
     &.syntax--string,
@@ -155,7 +155,7 @@ atom-text-editor {
     }
 
     &.syntax--bold {
-      color: @light-orange;
+      color: @orange;
       font-weight: bold;
     }
 
@@ -173,7 +173,7 @@ atom-text-editor {
 
 .syntax--support {
   &.syntax--class {
-    color: @light-orange;
+    color: @orange;
   }
 
   &.syntax--function  {
@@ -187,10 +187,10 @@ atom-text-editor {
 
 .syntax--entity {
   &.syntax--name.syntax--function {
-    color: @blue;
+    color: @cyan;
   }
   &.syntax--name.syntax--type {
-    color: @light-orange;
+    color: @orange;
     text-decoration: underline;
   }
 
@@ -198,7 +198,7 @@ atom-text-editor {
     color: @green;
   }
   &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
-    color: @light-orange;
+    color: @orange;
   }
 
   &.syntax--name.syntax--section {
@@ -221,7 +221,7 @@ atom-text-editor {
 
 .syntax--meta {
   &.syntax--class {
-    color: @light-orange;
+    color: @orange;
   }
 
   &.syntax--link {
@@ -237,7 +237,7 @@ atom-text-editor {
   }
 
   &.syntax--separator {
-    background-color: @gray;
+    background-color: lighten(@base, 10%);
     color: @syntax-text-color;
   }
 }
